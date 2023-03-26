@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="title-box"><h2 class="title">Splitter</h2></div>
+      <div class="container">
+        <div class="counter-box">
+          <p>Bill</p>
+          <div class="bill-box">
+            <img src="../images/icon-dollar.svg" alt="dollar sign" />
+            <input
+              class="input-bill"
+              type="text"
+              onkeypress="validate(event)"
+              maxlength="7"
+              placeholder="0"
+            />
+          </div>
+          <p class="select-tip">Select Tip %</p>
+          <div class="btn-box">
+            <button class="btns">5%</button>
+            <button class="btns">10%</button>
+            <button class="btns">15%</button>
+            <button class="btns">25%</button>
+            <button class="btns">50%</button>
+            <input
+              class="tips-persent"
+              type="number"
+              onkeypress="this.value=this.value.substring(0,2);"
+              placeholder="Custom"
+            />
+          </div>
+          <div class="title-num-people">
+            <p class="number-of-people">Number of People</p>
+            <p class="zeroPeople">Can't be zero</p>
+          </div>
+
+          <div class="num-people-box">
+            <img src="../images/icon-person.svg" alt="person sign" />
+            <input
+              class="input-person"
+              type="number"
+              onkeypress="this.value=this.value.substring(0,3);"
+              placeholder="0"
+            />
+          </div>
+        </div>
+
+        <div class="result-box">
+          <div class="tip-amount-total-box">
+            <div class="tip-amount-box">
+              <div class="amount-text">
+                <p class="white-col">Tip Amount</p>
+                <p>/person</p>
+              </div>
+              <div class="tip-price price">$0.00</div>
+            </div>
+
+            <div class="total-box">
+              <div class="total-text">
+                <p class="white-col">Total</p>
+                <p>/person</p>
+              </div>
+              <div class="total-price price">$0.00</div>
+            </div>
+          </div>
+          <div class="btn-reset-box">
+            <button class="btn-reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

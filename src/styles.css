@@ -1,0 +1,263 @@
+* {
+  font-family: "Space Mono", monospace;
+}
+
+* p {
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(186, 14%, 43%);
+}
+
+* input {
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(183, 100%, 15%);
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-box {
+  width: 6rem;
+  overflow-wrap: break-word;
+}
+
+.title {
+  align-items: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: hsl(183, 100%, 15%);
+  line-height: 30px;
+}
+
+.container {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.counter-box {
+  width: 18rem;
+  padding: 1rem;
+}
+
+.bill-box {
+  position: relative;
+}
+
+.bill-box img {
+  position: absolute;
+  top: 14px;
+  left: 7px;
+}
+
+.input-bill {
+  margin-top: 0.5rem;
+  text-align: right;
+  width: 17rem;
+  height: 1.7rem;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: hsl(189, 41%, 97%);
+  outline-color: hsl(189, 41%, 97%);
+  background-color: hsl(189, 41%, 97%);
+}
+
+.select-tip {
+  margin-top: 2.5rem;
+}
+
+.btn-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btns {
+  width: 5rem;
+  height: 2rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.btns:hover {
+  background-color: hsl(183, 50%, 65%);
+}
+
+.active-button {
+  background-color: hsl(172, 67%, 45%);
+  width: 5rem;
+  height: 2rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  color: white;
+  border-radius: 5px;
+}
+
+.tips-persent {
+  width: 4.5rem;
+  height: 1.7rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+  border-style: solid;
+  border-color: hsl(189, 41%, 97%);
+  outline: hsl(189, 41%, 97%);
+  background-color: hsl(189, 41%, 97%);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.title-num-people {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 2.5rem;
+  padding-right: 1rem;
+}
+
+.zeroPeople {
+  color: rgb(255, 255, 255);
+}
+
+.zeroPeopleRed {
+  color: red;
+  font-size: 10px;
+}
+
+.input-person {
+  margin-top: 0.5rem;
+  text-align: right;
+  width: 17rem;
+  height: 1.7rem;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: hsl(189, 41%, 97%);
+  outline: hsl(189, 41%, 97%);
+  background-color: hsl(189, 41%, 97%);
+}
+
+.input-red-color {
+  border: 2px solid rgb(206, 34, 34);
+}
+
+.input-green-color {
+  border: 2px solid hsl(172, 67%, 45%);
+  outline-color: hsl(172, 67%, 45%);
+}
+
+.num-people-box {
+  position: relative;
+}
+
+.num-people-box img {
+  position: absolute;
+  top: 15px;
+  left: 7px;
+}
+
+/* result box */
+
+.result-box {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  height: 18rem;
+  width: 20rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tip-amount-total-box {
+  margin: 2rem;
+}
+.tip-amount-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.white-col {
+  color: white;
+}
+
+.price {
+  font-size: 30px;
+  color: hsl(172, 67%, 45%);
+  font-weight: 600;
+}
+
+.total-box {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-reset-box {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-reset {
+  margin: 2rem;
+  width: 14rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: hsl(186, 14%, 43%);
+  border: none;
+  outline: none;
+  color: hsl(183, 100%, 15%);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-reset:hover {
+  background-color: hsl(185, 41%, 84%);
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .title-box {
+    margin-top: 1rem;
+  }
+
+  html,
+  body {
+    height: unset;
+    width: unset;
+  }
+}
